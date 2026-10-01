@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Snake Knot</string>
+    <string name="title_activity_main">Snake Knot</string>
+    <string name="package_name">com.dukagames.snakeescape</string>
+    <string name="custom_url_scheme">com.dukagames.snakeescape</string>
+</resources>

@@ -1,0 +1,50 @@
+# ══════════════════════════════════════════════════════════════════
+#  Snake Knot — .gitignore
+#  ASLA DEPOYA GİRMEYECEKLER — imzalama sırları
+# ══════════════════════════════════════════════════════════════════
+*.keystore
+*.jks
+keystore.properties
+!keystore.properties.ornek
+google-services.json
+*.p8
+*.p12
+local.properties
+
+# ── derleme çıktıları ──────────────────────────────────────────────
+node_modules/
+build/
+.gradle/
+android/build/
+android/app/build/
+android/capacitor-cordova-android-plugins/build/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+*.apk
+*.aab
+*.aar
+
+# ── üretilen paket ─────────────────────────────────────────────────
+# Kaynak artık depoda (kaynak/oyun.html) ve yap.js onu göreli yoldan
+# okuyor. Bu yüzden üretilen paketi takip etmiyoruz — Monoblock'la aynı
+# düzen. Derlemek için: node yap.js  →  npx cap sync android
+www/index.html
+
+# ── yedek ve deneme dosyaları ──────────────────────────────────────
+*.bak
+*.bak[0-9]*
+native.js.bak*
+
+# ── editör ve işletim sistemi ──────────────────────────────────────
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── geçici ─────────────────────────────────────────────────────────
+*.log
+*.tar.gz
+tmp/
